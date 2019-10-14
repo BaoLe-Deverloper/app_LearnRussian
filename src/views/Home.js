@@ -42,13 +42,13 @@ class home extends Component {
     }
     
     render() {
-       console.log(this.state)
+     
         const media_video = this.state.list_Yt.map((val, i) => {
           
             return (
                 <Col key={i} sm="12" md="8" lg="4">
                     <Card style={{ margin: "5px 0" }}>
-                        <YouTube opts={{ width: "100%", height: "300px" }} videoId={val.snippet.resourceId.videoId} />
+                        <YouTube host ='https://www.youtube.com' playerVars={{ 'origin':'https://youthful-easley-2870f7.netlify.com' }} opts={{ width: "100%", height: "300px" }} videoId={val.snippet.resourceId.videoId} />
                         <CardBody>
                            
                             <CardTitle>{val.snippet.title}</CardTitle>

@@ -169,7 +169,7 @@ class index extends React.Component {
       <Button type="submit" disabled={this.state.username === "" || this.state.email === "" || this.state.password !== this.state.confirm_pw || this.state.password === ""} style={style_btn_login} outline pill theme="success"> Register </Button>
       <Link to="#" className="text-right" style={{ float: "right" }} onClick={this.open_login}> <span>You have account ?</span> Login </Link>
 </Form>;
-console.log(this.state)
+
     return (
               <Card style={{maxWidth:"600px",margin: "40px auto"}}>
                 <CardBody>

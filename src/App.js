@@ -19,7 +19,7 @@ class App extends Component {
   //  window.responsiveVoice.speak("Добро пожаловать в онлайн приложение для изучения русского языка.желаю вам эффективного обучения", "Russian Male", {pitch:0.75 ,rate: 1,volume:1.2});
   }
   render() {
-    console.log(this.props.user);
+  
     return (
       <Router basename={process.env.REACT_APP_BASENAME || ""}>
       

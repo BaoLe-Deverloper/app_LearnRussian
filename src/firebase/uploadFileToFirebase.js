@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import firebase from "firebase";
+import firebase from "firebase/app";
 import { Progress } from "shards-react";
 import FileUploader from "react-firebase-file-uploader";
 import  "./initFirebase";
@@ -16,7 +16,7 @@ class uploadFileToFirebase extends Component {
   handleProgress = progress => this.setState({ progress });
   handleUploadError = error => {
     this.setState({ isUploading: false });
-    console.error(error);
+   
   };
   handleUploadSuccess = filename => {
     this.setState({ link: filename, progress: 100, isUploading: false });
